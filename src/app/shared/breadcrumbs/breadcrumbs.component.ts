@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivationEnd } from '@angular/router';
 import { map, filter } from 'rxjs/operators';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
-import { MetadataFactory } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-breadcrumbs',

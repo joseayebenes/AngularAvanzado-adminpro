@@ -7,14 +7,23 @@ import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
 import { AppRoutes } from './app-routing';
 import { ServiceModule } from './services/service.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
-  imports: [BrowserModule, AppRoutes, PagesModule, ServiceModule],
+  imports: [
+    BrowserModule,
+    AppRoutes,
+    PagesModule,
+    ServiceModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
