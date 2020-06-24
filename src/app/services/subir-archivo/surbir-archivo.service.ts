@@ -19,10 +19,8 @@ export class SurbirArchivoService {
       xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           if (xhr.status === 200) {
-            console.log('Imagen Subida');
             resolve(JSON.parse(xhr.response));
           } else {
-            console.log('Fallo en la subida');
             reject(xhr.response);
           }
         }
